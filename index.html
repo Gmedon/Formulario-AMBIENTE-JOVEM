@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario meio ambiente</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="rodape.png" class="logoinea">
+    </nav>
+    <main>
+        <div class="container-info">
+            <div class="parte-superior">
+                <h1>AMBIENTE JOVEM NUP: VARGEM GRANDE</h1>
+            </div>
+            <div class="parte-inferior">
+                <p>Alessandra</p>
+                <p>Thales</p>
+                <p>Felipe</p>
+                <p>Vladmir</p>
+                <p>Pamela</p>
+            </div>
+        </div>
+        <div class="container-form">
+            <form action="https://api.sheetmonkey.io/form/4SEbUzi1QbmYzjt9QDwmmq" method="post">
+                <fieldset class="info-pessoal">
+                    <legend>Informações pessoais</legend>
+                    <label>Nome<br>
+                        <input type="text" placeholder="Digite o nome" class="input-info" name="Nome" value="" required>
+                    </label><br>
+                    <label>Telefone <br>
+                        <input type="text" placeholder="Digite o telefone" class="input-info" name="Telefone" value=""
+                            required>
+                    </label><br>
+                    <label>Email <br>
+                        <input type="email" placeholder="Digite o email" class="input-info" name="Email" value="">
+                    </label><br>
+                    <label>Rua <br>
+                        <input type="text" placeholder="Digite a Rua" class="input-info" name="Rua, Numero" value=""
+                            required>
+                    </label><br>
+                    <label>Numero<br>
+                        <input type="text" placeholder="Digite o numero da casa" class="input-info" name="Rua, Numero"
+                            value="" required>
+                    </label>
+                </fieldset>
+                <fieldset class="info-atitudes">
+                    <legend>Atitudes</legend>
+                    <label>Joga lixo no chão?<br>
+                        <select name="Joga lixo no chão?">
+                            <option value="Prefiro não responder">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </label><br>
+                    <label>Faz a separação do lixo?<br>
+                        <select name="Faz a separação do lixo?">
+                            <option value="Prefiro não responder">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </label><br>
+                    <label>Se tivesse mais lixeiras espalhadas pelas ruas, facilitaria?<br>
+                        <select name="Se tivesse mais lixeiras espalhadas pelas ruas, facilitaria?">
+                            <option value="Prefiro não responder">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </label><br>
+                    <label>Você sabia que o lixo e o maior causador de enchentes?<br>
+                        <select name="Você sabia que o lixo e o maior causador de enchentes?">
+                            <option value="Prefiro não responder">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </label><br>
+                    <label>Oq você faz com o oleo usado na sua casa?<br>
+                        <textarea cols="30" rows="2" name="Oq você faz com o oleo usado na sua casa?"
+                            class="input-info"></textarea>
+                    </label>
+                </fieldset>
+                <hr />
+                <label>Pode fazer uma doação de oleo usado para o Ambiente Jovem?<br>
+                    <select name="Pode fazer uma doação de oleo usado para o Ambiente Jovem?">
+                        <option value="Prefiro não responder">Selecionar</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">No momento não</option>
+                    </select>
+                </label><br><br>
+                <button class="bt-enviar" onclick="enviarform()">Enviar</button>
+                <button class="bt-enviar" id="limpar">Limpar</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
